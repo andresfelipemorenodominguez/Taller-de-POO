@@ -11,7 +11,7 @@ class Persona {
     // Constructor de Persona: inicializa los atributos
     public Persona(int id, String nombre, String correo) {
         this.id = id;          // Asigna el valor recibido al campo id
-        this.nombre = nombre;  // Asigna el valor recibido al campo nombre
+        this.nombre = nombre;  // Asigna el valor recibido al campo nombre // this.nombre = nombre;  // es una referencia al objeto actual de la clase.
         this.correo = correo;  // Asigna el valor recibido al campo correo
     }
 
@@ -32,8 +32,8 @@ class Cliente extends Persona {
         super(id, nombre, correo); // Llama al constructor de la clase padre Persona
     }
 
-    @Override // Polimorfismo: redefinimos el método mostrarInfo()
-    public void mostrarInfo() {
+    @Override // Polimorfismo: redefinimos el método mostrarInfo() //@Override se utiliza para indicar que un método está sobrescribiendo 
+    public void mostrarInfo() {                                    // (redefiniendo) un método de la clase padre
         // Imprime una versión personalizada para Cliente
         System.out.println("Cliente: " + nombre +
                            " | Correo: " + correo);

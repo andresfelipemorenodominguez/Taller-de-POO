@@ -1,7 +1,7 @@
 class Producto:  # Define la clase base para productos físicos.
     def __init__(self, id, nombre, precio, stock):  # Constructor con identificador, nombre, precio y stock.
         self.id = id               # Asigna el identificador del producto.
-        self.nombre = nombre       # Asigna el nombre del producto.
+        self.nombre = nombre       # Asigna el nombre del producto.               #SELF es una referencia al objeto actual de la clase.
         self.precio = precio       # Asigna el precio del producto.
         self.stock = stock         # Asigna la cantidad disponible en inventario.
 
